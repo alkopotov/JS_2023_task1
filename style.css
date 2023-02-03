@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+.orange {
+  color: orangered;
+}
+table {
+  width: 200px;
+  font-size: 20px;
+  border: 1px solid #dddddd;
+
+}
+td {
+  border: 1px solid #dddddd;
+  padding: 10px;
+}
