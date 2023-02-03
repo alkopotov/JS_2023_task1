@@ -29,8 +29,6 @@ const setTable = function(array) {
   return str
 }
 
-
-
 table = document.firstElementChild.lastElementChild.firstElementChild.nextElementSibling;
 
 // console.log(setRow([1, 4]))
@@ -41,8 +39,19 @@ currentArr = table.innerText.split()
 console.log(currentArr);
 console.log(currentArr.length)
 
-let d = new RegExp('td')
-return table.innerHTML.match(d).length
-
+// let d = new RegExp('td')
+// return table.innerHTML.match(d).length
+const addElement = function(){
+  a = getNumber(0, 99)
+  if (a >= 50) {
+    cl = "orange"
+  } else cl = "black"
+  if (arrayRandom.length % 6 == 0) {
+    table.firstElementChild.innerHTML += `<tr><td class=${cl}>${a}</td></tr>`
+  }  else {
+    table.firstElementChild.lastElementChild.innerHTML += `<td class=${cl}>${a}</td>`
+  }
+  arrayRandom.push(a)
+}
 
 
